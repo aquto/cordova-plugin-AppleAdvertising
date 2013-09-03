@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="com.aquto.cordova.AppleAdvertising"
+      version="0.0.1">
+
+    <name>AppleAdvertising</name>
+    <description>Apple Advertising Identifier Plugin</description>
+    <license>MIT</license>
+    <keywords>cordova,idfa,idfv,advertising</keywords>
+
+    <!-- ios -->
+    <platform name="ios">
+
+        <config-file target="config.xml" parent="/*">
+    		<feature name="AppleAdvertising">
+    			<param name="ios-package" value="AppleAdvertising"/>
+    		</feature>
+        </config-file>
+
+        <js-module src="www/AppleAdvertising.js" name="AppleAdvertising">
+            <clobbers target="window.plugins.AppleAdvertising" />
+        </js-module>
+
+        <framework src="AdSupport.framework" weak="true" />
+
+    	<header-file src="src/ios/AppleAdvertising.h" />
+    	<source-file src="src/ios/AppleAdvertising.m" />
+
+    </platform>
+
+
+</plugin>

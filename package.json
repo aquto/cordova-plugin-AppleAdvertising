@@ -1,0 +1,24 @@
+{
+  "name": "cordova-plugin-AppleAdvertising",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/aquto/cordova-plugin-AppleAdvertising.git",
+  "author": "Josh Runge <joshrunge@gmail.com>",
+  "license": "MIT",
+  "cordova": {
+    "id": "cordova-plugin-AppleAdvertising",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.1.0"
+    }
+  ]
+}
